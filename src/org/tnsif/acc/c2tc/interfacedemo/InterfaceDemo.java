@@ -8,12 +8,12 @@ class SmartLight implements SmartDevice
 	}
 	@Override
 	public void turnOff() {
-		System.out.println("Smartlight is off");
+        System.out.println("SmartLight is off");
 		
 	}
 	@Override
 	public void getStatus() {
-		System.out.println("SmartLight is standbymode");
+        System.out.println("SmartLight is in standby mode");
 		
 	}
 	
