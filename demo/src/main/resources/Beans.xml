@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Change the "class" value below to switch which Sim implementation
+         gets injected wherever the bean id "sim" is requested - that's the
+         whole point of Spring IoC: the wiring lives here, not in the code. -->
+    <bean id="sim" class="org.tnsif.acc.c2tc.cambridge1_springioc.Jio" />
+
+</beans>
