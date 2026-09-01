@@ -4,9 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- Change the "class" value below to switch which Sim implementation
+    <!-- Used by org.tnsif.acc.c2tc.cambridge1_springioc.Mobile
+         Change the "class" value below to switch which Sim implementation
          gets injected wherever the bean id "sim" is requested - that's the
          whole point of Spring IoC: the wiring lives here, not in the code. -->
     <bean id="sim" class="org.tnsif.acc.c2tc.cambridge1_springioc.Jio" />
+
+    <!-- Used by org.tnsif.acc.c2tc.springioc.Mobile -->
+    <bean id="jio" class="org.tnsif.acc.c2tc.springioc.Jio" />
 
 </beans>
